@@ -1,0 +1,241 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f5f5;
+}
+
+header {
+  background-color: #4d94ff;
+  padding: 10px 0;
+}
+
+nav {
+  text-align: center;
+  background-color: #4d94ff;
+  padding: 10px 0;
+}
+
+section#onas {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+img.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+div.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 60px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  text-align: center;
+  font-size: 22px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #3571ff;
+}
+
+section {
+  margin: 50px 0;
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+h2 {
+  color: #4d94ff;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.animal-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.animal-container {
+  flex: 0 1 calc(25% - 30px);
+  margin: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.animal-container img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.animal-container p {
+  margin-top: 10px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+button#losujCiekawostke {
+  background-color: #4d94ff;
+  color: #fff;
+  font-size: 50px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+button#losujCiekawostke:hover {
+  background-color: #3571ff;
+}
+
+section#ciekawostki {
+  background-color: #fff;
+  padding: 20px;
+}
+#ciekawostkaTekst {
+  font-size: 35px;
+}
+
+#kontakt {
+  margin: 20px;
+  background-color: #4d94ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  text-align: right;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contact-info a {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.kontakt-h2 {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  .animal-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .animal-container {
+    flex-basis: calc(100% - 30px);
+    margin-bottom: 20px;
+  }
+
+  .animal-container p {
+    font-size: 18px;
+  }
+
+  img.background-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+
+  .content-container p {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .animal-gallery {
+    justify-content: space-around;
+  }
+
+  .animal-container {
+    flex-basis: calc(40% - 15px);
+  }
+
+  div.content-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  section#onas .content-container {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
